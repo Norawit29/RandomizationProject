@@ -68,7 +68,7 @@ def tampering_resistance_test_2(driver):
         for k in random_remove:
             num_list.remove(k)
         
-        num_list2 = [l+1 for l in range(PARTICIPANT_COUNT, 2*PARTICIPANT_COUNT)]
+        num_list2 = [l+1 for l in range(PARTICIPANT_COUNT + 1, 2*PARTICIPANT_COUNT)]
         rand = random.choices(num_list2, k=5)
         num_list.extend(rand)
         random.shuffle(num_list)
